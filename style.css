@@ -63,3 +63,14 @@ section div{
 section img {
     position: relative;
 }
+
+header img{
+    width: 136px;
+    transition: 0.5s;
+}
+
+header.scrolled img {
+    width: 64px;
+    
+}
+
