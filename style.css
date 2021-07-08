@@ -1,3 +1,9 @@
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+
 @font-face {
     font-family: "Syne";
     src: url(syne-regular.woff2), url(syne-regular.woff);
@@ -17,6 +23,8 @@ body {
     background-color: #f4e6d8;
     max-width: 1120px;
     margin: 240px auto 240px auto;
+
+    overflow-x: hidden;
 
     transition: background 0.5s;
 }
@@ -79,11 +87,12 @@ header.scrolled img {
 div.stamps {
     position:absolute;
     top:0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 50%;
 }
 
 div.stamps img{
     position: absolute;
     transform: translate(-50%,-50%);
+    animation: spin 30s linear infinite;
 }
